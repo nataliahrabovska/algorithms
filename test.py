@@ -4,7 +4,7 @@ from lab1 import plant
 
 
 class TestPlantingAlgorithm(unittest.TestCase):
-    def test_case_1(self):
+    def test_1(self):
         m, n = 5, 5
         counts = [[1, 2, 3, 4, 5],
                   [6, 7, 8, 9, 10],
@@ -14,14 +14,14 @@ class TestPlantingAlgorithm(unittest.TestCase):
         expected_result = [1, 2, 3, 4, 5, 10, 9, 8, 7, 6, 11, 12, 13, 14, 15, 20, 19, 18, 17, 16, 21, 22, 23, 24, 25]
         self.assertEqual(plant(m, n, counts), expected_result)
 
-    def test_case_2(self):
+    def test_2(self):
         m, n = 2, 4
         counts = [[1, 2, 3, 4],
                   [5, 6, 7, 8]]
         expected_result = [1, 2, 3, 4, 8, 7, 6, 5]
         self.assertEqual(plant(m, n, counts), expected_result)
 
-    def test_case_3(self):
+    def test_3(self):
         m, n = 1, 6
         counts = [[1, 2, 3, 4, 5, 6]]
         expected_result = [1, 2, 3, 4, 5, 6]
