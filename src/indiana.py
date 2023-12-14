@@ -32,7 +32,6 @@ def main():
             suma[symb] += tmp[symb]
             symb = chr(ord(symb) + 1)
 
-    # Writing output to a file
     with open('C:/Users/user/PycharmProjects/algo/ijones.out', 'w') as file:
         if H == 1:
             file.write(str(number[0][W - 1]) + '\n')
